@@ -11,7 +11,8 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "generate:config": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generateConfig"
+    "generate:config": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generateConfig",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
@@ -77,6 +78,7 @@
     "@types/react-redux": "^7.1.16",
     "@types/react-transition-group": "^4.4.1",
     "eslint": "^7.26.0",
+    "gh-pages": "^3.1.0",
     "husky": "4.3.5",
     "prettier": "^2.3.0",
     "source-map-explorer": "^2.5.2",
